@@ -1,37 +1,84 @@
-﻿using System;
+﻿
+using System;
+using System.Reflection;
+using System.Collections.Generic;
+using System.IO;
+using System.Diagnostics;
 
 namespace TrianglePatterns
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			DisplayPatternA();
-			DisplayPatternB();
-			DisplayPatternC();
-			DisplayPatternD();
+    class Program
+    {
+        const String STAR = "*";
+        const String SPACE = "";
+        const int counter = 10;
 
-			Console.ReadLine();
-		}
+        static void Main(string[] args)
+        {
+            DisplayPatternA();
+            DisplayPatternB();
+            DisplayPatternC();
+            DisplayPatternD();
 
-		static void DisplayPatternA()
-		{
-			// your implementation here
-		}
+            Console.ReadLine();
+        }
 
-		static void DisplayPatternB()
-		{
-			// your implementation here
-		}
+        static void DisplayPatternA()
+        {
+            for (int r = 0; r < counter; r++)
+            {
+                for (int c = 0; c <= r; c++)
+                {
+                    Console.Write(STAR);
+                }
 
-		static void DisplayPatternC()
-		{
-			// your implementation here
-		}
+                Console.WriteLine();
+            }
 
-		static void DisplayPatternD()
-		{
-			// your implementation here
-		}
-	}
+            Console.WriteLine();
+
+        }
+
+        static void DisplayPatternB()
+        {
+            for (int r = 0; r < counter; r++)
+            {
+                for (int c = 0; c < r; c++)
+                    Console.Write(SPACE);
+                for (int c = 0; c < counter - r; c++)
+                    Console.Write(STAR);
+
+                Console.WriteLine();
+
+            }
+            Console.WriteLine();
+        }
+            static void DisplayPatternC()
+        {
+                for (int r = counter; r > 0; r--)
+                {
+                    for (int c = 0; c < r; c++)
+                        Console.Write(STAR);
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+
+            static void DisplayPatternD()
+        {
+                for (int r = counter; r >= 0; r--)
+                {
+                    for (int c = 0; c < r; c++)
+                        Console.Write(SPACE);
+                    for (int c = 0; c < counter - r; c++)
+                        Console.Write(STAR);
+                    Console.WriteLine();
+
+                }
+                Console.WriteLine();
+            }
+        
+        }
+    
 }
+    
