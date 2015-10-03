@@ -14,7 +14,7 @@ namespace BoxingWeights
                 BoxingWeightClassifier Bw = new BoxingWeightClassifier();
                 string b = Bw.ClassifyBoxingWeight(weightInPounds);
 
-                Console.WriteLine();
+                Console.WriteLine(b);
             }
 
             }

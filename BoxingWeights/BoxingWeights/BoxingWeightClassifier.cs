@@ -7,95 +7,91 @@ namespace BoxingWeights
 		{
 			string result = weightInPounds.ToString();
 
-            
-                if (weightInPounds < 100)
-                {
-                    Console.WriteLine("Not Eligible");
-                }
+           
 
-                if (weightInPounds >= 100 && weightInPounds <= 105)
+                if (weightInPounds >= 0 && weightInPounds <= 105)
                 {
-                    Console.WriteLine("Straw Weight");
+                    return("Strawweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 106 && weightInPounds <= 108)
                 {
-                    Console.WriteLine("Junior FlyWieght");
+                    return("JuniorFlyweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 109 && weightInPounds <= 112)
                 {
-                    Console.WriteLine("FlyWeight");
+                    return("Flyweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 113 && weightInPounds <= 115)
                 {
-                    Console.WriteLine("Junior BantamWeight");
+                    return("Bantamweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 116 && weightInPounds <= 118)
                 {
-                    Console.WriteLine("BantamWeight");
+                    return("Bantamweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 119 && weightInPounds <= 122)
                 {
-                    Console.WriteLine("Junior FeatherWeight");
+                    return("JuniorFeatherweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 123 && weightInPounds <= 126)
                 {
-                    Console.WriteLine("FeatherWeight");
+                    return("Featherweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 127 && weightInPounds <= 130)
                 {
-                    Console.WriteLine("Junior LightWeight");
+                    return("JuniorLightweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 131 && weightInPounds <= 135)
                 {
-                    Console.WriteLine("LightWeight");
+                    return("Lightweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 136 && weightInPounds <= 140)
                 {
-                    Console.WriteLine("Junior WelterWeight");
+                    return("JuniorWelterweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 141 && weightInPounds <= 147)
                 {
-                    Console.WriteLine("WelterWeight");
+                    return("Welterweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 148 && weightInPounds <= 154)
                 {
-                    Console.WriteLine("Junior MiddleWeight");
+                    return("JuniorMiddleweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 155 && weightInPounds <= 160)
                 {
-                    Console.WriteLine("MiddleWeight");
+                    return("Middleweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 161 && weightInPounds <= 168)
                 {
-                    Console.WriteLine("Super MiddleWeight");
+                    return("SuperMiddleweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 169 && weightInPounds <= 175)
                 {
-                    Console.WriteLine("Light HeavyWeight");
+                    return("LightHeavyweight and Heavyweight");
                 }
 
                 else if (weightInPounds >= 176 && weightInPounds <= 200)
                 {
-                    Console.WriteLine("CruiserWeight");
+                    return("Cruiserweight and Heavyweight");
                 }
 
                 else if (weightInPounds > 200)
                 {
-                    Console.WriteLine("HeavyWeight");
+                    return("Heavyweight");
                 }
  
 
