@@ -10,7 +10,7 @@ namespace TrianglePatterns
     class Program
     {
         const String STAR = "*";
-        const String SPACE = "";
+        const String SPACE = " ";
         const int counter = 10;
 
         static void Main(string[] args)
@@ -43,9 +43,8 @@ namespace TrianglePatterns
         {
             for (int r = 0; r < counter; r++)
             {
-                for (int c = 0; c < r; c++)
-                    Console.Write(SPACE);
-                for (int c = 0; c < counter - r; c++)
+                
+                for (int k = 0; k < counter - r; k++)
                     Console.Write(STAR);
 
                 Console.WriteLine();
@@ -53,18 +52,26 @@ namespace TrianglePatterns
             }
             Console.WriteLine();
         }
-            static void DisplayPatternC()
+        static void DisplayPatternC()
         {
-                for (int r = counter; r > 0; r--)
+            for (int r = counter; r >= 1; r--)
+
+            {
+                for (int c = 1; c <= counter - r; c++)
                 {
-                    for (int c = 0; c < r; c++)
-                        Console.Write(STAR);
-                    Console.WriteLine();
+                    Console.Write(SPACE);
                 }
+
+                for (int k = 1; k <= r; k++)
+                {
+                    Console.Write(STAR);
+                }
+
                 Console.WriteLine();
             }
+        }
 
-            static void DisplayPatternD()
+        static void DisplayPatternD()
         {
                 for (int r = counter; r >= 0; r--)
                 {
