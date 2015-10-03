@@ -11,7 +11,7 @@ namespace TrianglePatterns
     {
         const String STAR = "*";
         const String SPACE = " ";
-        const int counter = 10;
+        const int counter = 10; 
 
         static void Main(string[] args)
         {
