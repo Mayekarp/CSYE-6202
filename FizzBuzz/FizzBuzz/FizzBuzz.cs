@@ -5,31 +5,35 @@ namespace FizzBuzz
 	{
 		public string RunFizzBuzz(int num)
 		{
-			string result = num.ToString();
-     
+            string result = num.ToString();
 
-                if (num % 3 == 0 && num % 5 == 0)
-                {
-                    Console.WriteLine("FizzBuzz {0}", num);
-                }
-
-                else if (num % 3 == 0)
-                {
-                    Console.WriteLine("Fizz {0}", num);
-                }
-
-                else if (num % 5 == 0)
-                {
-                    Console.WriteLine("Buzz {0}", num);
-                }
-
-                else if (num % 3 != 0 && num % 5 != 0)
+            if (num == 0)
             {
-                Console.WriteLine("Not on the list");
+                return (result);
+            }
+            else if (num % 3 == 0 && num % 5 == 0)
+            {
+                return ("FizzBuzz");
+
             }
 
+            else if (num % 3 == 0)
+            {
+                return ("Fizz");
+            }
+
+            else if (num % 5 == 0)
+            {
+                return ("Buzz");
+            }
+
+            else 
+                {
+                return(result);
+                }
+
                 
-            return result;
+
 		}
 	}
 }
