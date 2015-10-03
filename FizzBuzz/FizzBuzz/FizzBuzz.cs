@@ -1,14 +1,35 @@
-﻿namespace FizzBuzz
+﻿using System;
+namespace FizzBuzz
 {
 	public class FizzBuzz
 	{
-		public string RunFizzBuzz(int number)
+		public string RunFizzBuzz(int num)
 		{
-			string result = number.ToString();
+			string result = num.ToString();
+     
 
-			// your solution/implementation should go in here
+                if (num % 3 == 0 && num % 5 == 0)
+                {
+                    Console.WriteLine("FizzBuzz {0}", num);
+                }
 
-			return result;
+                else if (num % 3 == 0)
+                {
+                    Console.WriteLine("Fizz {0}", num);
+                }
+
+                else if (num % 5 == 0)
+                {
+                    Console.WriteLine("Buzz {0}", num);
+                }
+
+                else if (num % 3 != 0 && num % 5 != 0)
+            {
+                Console.WriteLine("Not on the list");
+            }
+
+                
+            return result;
 		}
 	}
 }
