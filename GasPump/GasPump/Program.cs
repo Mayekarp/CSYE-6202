@@ -15,13 +15,13 @@ namespace GasPump
 
 		static void Main(string[] args)
 		{
-            Console.WriteLine("Enter purchase gas type");
+            Console.WriteLine("\nEnter purchase gas type");
             string userInput = Console.ReadLine();
 
             
             if (UserEnteredSentinelValue(userInput))
             {
-                Console.WriteLine("Application Terminated");
+                Console.WriteLine("\nApplication Terminated");
                 Console.ReadLine();
 
                 System.Environment.Exit(1);
@@ -30,18 +30,18 @@ namespace GasPump
             if (!UserEnteredValidGasType(userInput))
             {
                 
-                Console.Write("Invalid input for gas type.");
+                Console.Write("\nInvalid input for gas type.");
                 System.Environment.Exit(1);
 
 
             }
            
-            Console.WriteLine("Please enter purchased gas amount");
+            Console.WriteLine("\nPlease enter purchased gas amount");
             String gasAmount = Console.ReadLine();
 
             if (UserEnteredSentinelValue(gasAmount))
             {
-                Console.WriteLine("Application Terminated");
+                Console.WriteLine("\nApplication Terminated");
                 Console.ReadLine();
 
                 System.Environment.Exit(1);
@@ -50,7 +50,7 @@ namespace GasPump
             if (UserEnteredValidAmount(gasAmount))
             {
 
-                Console.WriteLine("The valued entered is:" +gasAmount);
+                Console.WriteLine("\nThe valued entered is:" +gasAmount);
                 Console.ReadLine();
 
                 GasType gas = GasTypeMapper(userInput[0]);
@@ -58,11 +58,11 @@ namespace GasPump
 
                 double totalCost = 0.0;
                 CalculateTotalCost(gas,Convert.ToInt32(gasAmount), ref totalCost);
-                Console.WriteLine("TotalCost:" + totalCost);
+                Console.WriteLine("\nTotalCost:" + totalCost);
                 Console.ReadLine();
                 if (UserEnteredSentinelValue(gasAmount))
                 {
-                    Console.WriteLine("Application Terminated");
+                    Console.WriteLine("\nApplication Terminated");
                     Console.ReadLine();
 
                     System.Environment.Exit(1);
@@ -72,7 +72,7 @@ namespace GasPump
 
             else
             {
-                Console.WriteLine("Entered Input is invalid");
+                Console.WriteLine("\nEntered Input is invalid");
                 System.Environment.Exit(1);
                 Console.ReadLine();
             }
@@ -85,17 +85,13 @@ namespace GasPump
 		public static bool UserEnteredSentinelValue(string userInput)
 		{
 			var result = false;
-            
-            if( userInput.Equals("Q")|| userInput.Equals("q"))
+
+            if (userInput.Equals("Q") || userInput.Equals("q"))
             {
                 result = true;
             }
-            else if (userInput == null)
-            {
+            else
                 result = false;
-            }
-
-           
 			return result;
 		}
 
@@ -128,7 +124,8 @@ namespace GasPump
                 Console.Write("The entered type is Diesel Gas");
                 result = true;
             }
-			
+
+            
 			return result;
 		}
 
@@ -238,7 +235,7 @@ namespace GasPump
 
             double price;
             price = GasPriceMapper(gasType);
-            Console.WriteLine("The price for gas is - " + price);
+            Console.WriteLine("The price for gas is: " + price);
             Console.ReadLine();
             totalCost = gasAmount * price;
             
