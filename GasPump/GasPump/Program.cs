@@ -33,15 +33,26 @@ namespace GasPump
                 Console.Write("Invalid input for gas type.");
                 System.Environment.Exit(1);
 
+
             }
            
             Console.WriteLine("Please enter purchased gas amount");
             String gasAmount = Console.ReadLine();
 
+            if (UserEnteredSentinelValue(gasAmount))
+            {
+                Console.WriteLine("Application Terminated");
+                Console.ReadLine();
+
+                System.Environment.Exit(1);
+            }
+            
             if (UserEnteredValidAmount(gasAmount))
             {
+
                 Console.WriteLine("The valued entered is:" +gasAmount);
                 Console.ReadLine();
+
                 GasType gas = GasTypeMapper(userInput[0]);
                 Console.ReadLine();
 
@@ -49,6 +60,13 @@ namespace GasPump
                 CalculateTotalCost(gas,Convert.ToInt32(gasAmount), ref totalCost);
                 Console.WriteLine("TotalCost:" + totalCost);
                 Console.ReadLine();
+                if (UserEnteredSentinelValue(gasAmount))
+                {
+                    Console.WriteLine("Application Terminated");
+                    Console.ReadLine();
+
+                    System.Environment.Exit(1);
+                }
 
             }
 
@@ -72,8 +90,12 @@ namespace GasPump
             {
                 result = true;
             }
-            
+            else if (userInput == null)
+            {
+                result = false;
+            }
 
+           
 			return result;
 		}
 
@@ -114,13 +136,14 @@ namespace GasPump
 		// please use Double.TryParse() method 
 		public static bool UserEnteredValidAmount(string userInput)
 		{
-			var result = false;
-            double value;
-            result = double.TryParse(userInput, out value);
+            var result = false;
             
+                double value;
+                result = double.TryParse(userInput, out value);
 
-			return result;
-		}
+            return result;
+
+        }
 
 		// use this method to map a valid char entry to its enum representation
 		// e.g. User enters 'R' or 'r' --> this should be mapped to GasType.RegularGas
