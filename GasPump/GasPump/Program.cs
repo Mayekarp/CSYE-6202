@@ -51,7 +51,7 @@ namespace GasPump
             {
 
                 Console.WriteLine("\nThe valued entered is:" +gasAmount);
-                Console.ReadLine();
+                //Console.ReadLine();
 
                 GasType gas = GasTypeMapper(userInput[0]);
                 Console.ReadLine();
