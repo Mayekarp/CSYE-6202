@@ -4,7 +4,7 @@
 	{
 		static void Main(string[] args)
 		{
-            //implementation
-		}
+            List<HealthProfile> HealthProfileList = new List<HealthProfile>();
+		} 
 	}
 }
