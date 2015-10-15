@@ -14,9 +14,9 @@ namespace HealthRecordApp
 		private const int UnknownValue = -1;
         private string firstName;
         private string lastName;
-        private DateTime dateofbirth;
-        private int height;
-        private int weight;
+        private DateTime dOB;
+        private int heightInInches;
+        private int weightInPounds;
         private Gender gender;
 
         public HealthProfile()
@@ -26,9 +26,9 @@ namespace HealthRecordApp
         {
             this.firstName = FirstName;
             this.lastName = LastName;
-            this.dateofbirth = DateOfBirth;
-            this.height = Height;
-            this.weight = Weight;
+            this.dOB = dateofbirth;
+            this.heightInInches = height;
+            this.WeightInPounds = weight;
             this.gender = Gender;         }
 
         public string FirstName
@@ -43,22 +43,22 @@ namespace HealthRecordApp
             set { lastName = value; }
         }
 
-        public DateTime DateOfBirth
+        public DateTime DOB
         {
-            get { return dateofbirth; }
-            set { dateofbirth = value; }
+            get { return dOB; }
+            set { dOB = value; }
         }
 
-        public int Height
+        public int HeightInInches
         {
-            get { return height; }
-            set { height = value; }
+            get { return heightInInches; }
+            set { heightInInches = value; }
         }
 
-        public int Weight
+        public int WeightInPounds
         {
-            get { return weight; }
-            set { weight = value; }
+            get { return weightInPounds; }
+            set { weightInPounds = value; }
         }
 
         public Gender Gender
@@ -74,7 +74,7 @@ namespace HealthRecordApp
         public int CalculateAge()
 		{
             
-            int Days = (DateTime.Now.Year * 365 + DateTime.Now.DayOfYear) - (dateofbirth.Year * 365 + dateofbirth.DayOfYear);
+            int Days = (DateTime.Now.Year * 365 + DateTime.Now.DayOfYear) - (dOB.Year * 365 + dOB.DayOfYear);
             int Years = Days / 365;
             //string age = (Days >= 365) ? "Your age: " + Years + "Years" ;
 
@@ -107,18 +107,19 @@ namespace HealthRecordApp
             //BMI = 
             // return UnknownValue;
 
-            decimal d = 0;
-            d= ((Weight * 703m) / (Height* Height));
-            return d;
+            decimal BMI = 0;
+            BMI = ((WeightInPounds * 703m) / (HeightInInches* HeightInInches));
+            BMI =Decimal.Round(BMI, 2);
+            return BMI;
 		}
 
 		public void DisplayPatientProfile()
 		{
-            Console.Write("Displaying Patiet's Profile");
+            Console.WriteLine("\nDisplaying Patient's Profile");
             Console.WriteLine("\nFirst Name: " +FirstName);
             Console.WriteLine("\nLast Name: " +LastName);
             Console.WriteLine("\nGender: " +gender);
-            Console.WriteLine("\nDateOfBirth: " +dateofbirth);
+            Console.WriteLine("\nDateOfBirth: " +dOB);
             Console.WriteLine("\nAge: " +CalculateAge());
             Console.WriteLine("\nMaxHeartRate: " +CalculateMaxHeartRate());
             Console.WriteLine("\nBMI: " +CalculateBMI());

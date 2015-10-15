@@ -7,40 +7,53 @@ namespace HealthRecordApp
 	{
 		public static bool ValidateFirstName(string firstName)
 		{
-            if (Regex.IsMatch(firstName, "^[a-z]+$", RegexOptions.IgnoreCase))
-                return true;
-            else
+            if(String.IsNullOrEmpty(firstName))
             {
                 return false;
             }
+            var result = false;
+            if (Regex.IsMatch(firstName, "^[a-z]+$", RegexOptions.IgnoreCase))
+                result = true;
+            else if (firstName == null )
+            {
+                
+                result = false;
+            }
+            return result;
 		}
 
 		public static bool ValidateLastName(string lastName)
 		{
-
-            if (Regex.IsMatch(lastName, "^[a-z]+$", RegexOptions.IgnoreCase))
-                return true;
-            else
+            if (String.IsNullOrEmpty(lastName))
             {
                 return false;
             }
+            var result = false;
+            if (Regex.IsMatch(lastName, "^[a-z]+$", RegexOptions.IgnoreCase))
+                result = true;
+            else if (lastName == null)
+            {
+                result = false;
+            }
+
+            return result;
         }
 
 		public static bool ValidateGender(string enteredGender, ref Gender patientGender)
 		{
             var result = false;
-            if (enteredGender.ToLower().Equals("f"))
+            if (enteredGender.ToLower().Equals("female"))
             {
                 patientGender = Gender.Female;
 
                 result = true;
             }
-            if (enteredGender.ToLower().Equals("m"))
+            if (enteredGender.ToLower().Equals("male"))
             {
                 patientGender = Gender.Male;
                 result = true;
             }
-            if (enteredGender.ToLower().Equals("u"))
+            if (enteredGender.ToLower().Equals("unspecified"))
             {
                 patientGender = Gender.Unspecified;
                 result = true;
@@ -51,14 +64,41 @@ namespace HealthRecordApp
 
 		public static bool ValidateDateOfBirth(string enteredDOB, ref DateTime patientDOB)
 		{
-            DateTime db = new DateTime();
+            DateTime db = DateTime.Now;
             //return DateTime.TryParse(enteredDOB, out patientDOB) ? true : false;
+            var result = false;
 
-            if (DateTime.TryParse(enteredDOB, out db))
+            if (DateTime.TryParse(enteredDOB, out patientDOB))
             {
-                
-                patientDOB = db;
-                return true;
+                result = true;
+            }
+            else
+            {
+                result= false;
+            }
+            if( db.CompareTo(patientDOB) < 0)
+            {
+                patientDOB = DateTime.MinValue;
+                return false;
+            }
+            return result;
+
+        }
+
+        public static bool ValidateHeight(string heightInString, ref int patientHeight)
+		{
+            int h = 0;
+            if (int.TryParse(heightInString,out h))
+            {
+                if (h >0)
+                {
+                    patientHeight = h;
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
@@ -68,28 +108,20 @@ namespace HealthRecordApp
 
         }
 
-        public static bool ValidateHeight(string heightInString, ref int patientHeight)
-		{
-            int h = 0;
-            if (int.TryParse(heightInString,out h))
-            {
-                patientHeight = h;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-            
-		}
-
 		public static bool ValidateWeight(string weightInString, ref int patientWeight)
 		{
             int w = 0;
             if (int.TryParse(weightInString, out w))
             {
-                patientWeight = w;
-                return true;
+                if(w > 0) {
+                    patientWeight = w;
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
             }
             else
             {

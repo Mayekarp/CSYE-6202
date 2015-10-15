@@ -63,7 +63,7 @@ namespace HealthRecordApp
                 }
 
                 String Datetime = Convert.ToString(Console.ReadLine());
-                DateTime dateofbirth = new DateTime();
+                DateTime dateofbirth = DateTime.MinValue;
                 value = HealthProfileHelper.ValidateDateOfBirth(Datetime, ref dateofbirth);
 
                 if (value == false)
@@ -75,7 +75,7 @@ namespace HealthRecordApp
                 {
                     //int DateOfBirth = int.Parse(Datetime);
 
-                    healthProfile.DateOfBirth = dateofbirth;
+                    healthProfile.DOB = dateofbirth;
                     Console.Write("Please Enter Person's Height: ");
                 }
 
@@ -89,7 +89,7 @@ namespace HealthRecordApp
                 }
                 else
 	            {
-                    healthProfile.Height = h;
+                    healthProfile.HeightInInches = h;
                     Console.Write("Please Enter Person's Weight: ");
                 }
 
@@ -102,7 +102,7 @@ namespace HealthRecordApp
                 }
                 else
                 {
-                    healthProfile.Weight = w;
+                    healthProfile.WeightInPounds = w;
                     healthProfile.DisplayPatientProfile();                }
 
 
