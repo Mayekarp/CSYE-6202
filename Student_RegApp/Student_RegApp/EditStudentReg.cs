@@ -7,22 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.Sql;
 using System.Data.SqlClient;
+
 
 namespace Student_RegApp
 {
-    public partial class RemoveStudentReg : Form
+    public partial class EditStudentReg : Form
     {
         SqlCommand cmd;
         SqlConnection con;
         SqlDataAdapter sda;
 
-        public RemoveStudentReg()
-        {
-            InitializeComponent();
-            
-        }
 
         public string TextBoxValue1
         {
@@ -42,20 +37,31 @@ namespace Student_RegApp
             set { Lastname_Text.Text = value; }
         }
 
+
+        public EditStudentReg()
+        {
+            InitializeComponent();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to remove this student", "Remove Student Registration Confirmation", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to update this student", "Update Student Registration Confirmation", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 con = new SqlConnection("Data Source = POOJAAVINASH; Initial Catalog = Student_Registration; Integrated Security = True");
                 con.Open();
-                string sql = string.Format("Delete from Student_info where StudentID = " + Student_Text.Text);
+                //string sql = string.Format("Delete from Student_info where StudentID = " + Student_Text.Text);
+                String sql = string.Format("Update Student_Info set Firstname = '" + Firstname_Text.Text + "' ,Lastname = '" + Lastname_Text.Text + "' where StudentID = '" + Student_Text.Text + " ' " , con);
                 SqlCommand cmd = new SqlCommand(sql, con);
+                //cmd.Parameters.Add("@StudentID", Student_Text.Text);
+                //cmd.Parameters.Add("@Firstname", Firstname_Text.Text);
+                //cmd.Parameters.Add("@Lastname", Lastname_Text.Text);
+                //cmd.Parameters.Add("@Department", comboBox1.SelectedText.ToString());
 
                 try
                 {
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("delete successful");
+                    MessageBox.Show("update successful");
                 }
                 catch (SqlException ex)
                 {

@@ -46,7 +46,10 @@ namespace Student_RegApp
             cmd = new SqlCommand("Insert into Student_Info (StudentID, Firstname, Lastname, Department, Enrollment_Type) values (@StudentID, @Firstname, @Lastname, @Department, '" + Enrollment_Type + "')", con);
             
             MessageBox.Show("Sucessfully Added New Student");
-            this.Close();
+            this.Hide();
+            New_Student_Registration nsr = new New_Student_Registration();
+            nsr.Show();
+            //this.Close();
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
