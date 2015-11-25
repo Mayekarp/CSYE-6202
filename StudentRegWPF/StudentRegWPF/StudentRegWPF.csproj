@@ -57,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddNewStudentReg.xaml.cs">
+      <DependentUpon>AddNewStudentReg.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NewStudentRegistration.xaml.cs">
       <DependentUpon>NewStudentRegistration.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Student_RegistrationDataSet.xsd</DependentUpon>
     </Compile>
+    <Page Include="AddNewStudentReg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
