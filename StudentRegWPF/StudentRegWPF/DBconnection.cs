@@ -14,7 +14,7 @@ namespace StudentRegWPF
         public void connection()
         {
             //DataBase Connection Details  
-            constr = "Data Source=POOJAAVINASH;Initial Catalog=Student_Registration;Integrated Security=True";
+            constr = "Data Source=POOJAAVINASH;Initial Catalog=StudentLogin;Integrated Security=True";
             con = new SqlConnection(constr);
             con.Open();
 

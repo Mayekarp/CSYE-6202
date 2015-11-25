@@ -37,9 +37,9 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label x:Name="Password" Content="Password" HorizontalAlignment="Left" Margin="0,36,0,0" VerticalAlignment="Top" Grid.Row="1" FontSize="16" Grid.Column="1" Width="83" Background="#FFF1E7E7" BorderThickness="3" FontWeight="Bold"/>
-        <TextBox x:Name="Username1" HorizontalAlignment="Right" Height="37" Margin="0,83,130,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Grid.Column="1"/>
-        <TextBox x:Name="Password1" HorizontalAlignment="Left" Height="37" Margin="144,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="Password" Content="Password" HorizontalAlignment="Left" Margin="0,36,0,0" VerticalAlignment="Top" Grid.Row="1" FontSize="16" Grid.Column="1" Width="93" Background="#FFF1E7E7" BorderThickness="3" FontWeight="Bold"/>
+        <TextBox x:Name="Username1" HorizontalAlignment="Right" Height="23" Margin="0,97,143,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Grid.Column="1"/>
+        <TextBox x:Name="Password1" HorizontalAlignment="Left" Height="25" Margin="131,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Grid.Row="1" Grid.Column="1"/>
 
     </Grid>
 </Window>
