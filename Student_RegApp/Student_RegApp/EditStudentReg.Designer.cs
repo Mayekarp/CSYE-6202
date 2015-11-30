@@ -206,6 +206,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "EditStudentReg";
             this.Text = "EditStudentReg";
             this.groupBox1.ResumeLayout(false);

@@ -90,6 +90,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.Enabled = false;
             this.radioButton2.Location = new System.Drawing.Point(137, 54);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(86, 21);
@@ -259,6 +260,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "New_Student_Registration";
             this.Text = "New Student Registration";
             this.Load += new System.EventHandler(this.New_Student_Registration_Load);

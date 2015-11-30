@@ -13,6 +13,7 @@ namespace Student_RegApp
 {
     public partial class Form1 : Form
     {
+        int count = 0;
         public Form1()
         {
             InitializeComponent();
@@ -62,7 +63,13 @@ namespace Student_RegApp
             }
             else
             {
+                count++;
                 MessageBox.Show("Incorrect username or password");
+
+                if (count == 3)
+                {
+                    Environment.Exit(1);
+                }
             }
 
             dr.Close();
