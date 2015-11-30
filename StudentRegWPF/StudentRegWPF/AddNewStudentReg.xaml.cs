@@ -36,7 +36,7 @@ namespace StudentRegWPF
                 (Student_Id.Text == "" || First_Name1.Text == "" || Last_Name1.Text == "")
                 MessageBox.Show("Please Fill in all the Tables");
             else
-            {
+            { 
                 string query = "Insert into Student_Info (StudentID, Firstname, Lastname, Department, EnrollmentType) values (@StudentID, @Firstname, @Lastname, @Department, '" + EnrollmentType + "')";
                 SqlCommand cmd = new SqlCommand(query, objcon.con);
                 cmd.Parameters.AddWithValue("@StudentID", Student_Id.Text);
