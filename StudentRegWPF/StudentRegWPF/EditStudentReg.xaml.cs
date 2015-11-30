@@ -47,7 +47,8 @@ namespace StudentRegWPF
 
         public string TextBoxValue4
         {
-            get; set;
+            get { return Department1.Text; }
+            set { Department1.Text = value; }
         }
 
         public string TextBoxValue5
