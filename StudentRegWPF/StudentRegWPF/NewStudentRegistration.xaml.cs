@@ -77,26 +77,29 @@ namespace StudentRegWPF
 
         private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //if (this.dataGrid.SelectedItems.Count > 0)
-            //{
-            //    //string Student_Id = ((DataRowView)dataGrid.SelectedItem).Row["StudentId"].ToString();
-            //    //string First_Name1 = ((DataRowView)dataGrid.SelectedItem).Row["Firstname"].ToString();
-            //    //string Last_Name1 = ((DataRowView)dataGrid.SelectedItem).Row["Lastname"].ToString();
+            if (this.dataGrid.SelectedItems.Count > 0)
+            {
+                TextBox1 = ((DataRowView)dataGrid.SelectedItem).Row["StudentId"].ToString();
+                TextBox2 = ((DataRowView)dataGrid.SelectedItem).Row["Firstname"].ToString();
+                TextBox3 = ((DataRowView)dataGrid.SelectedItem).Row["Lastname"].ToString();
+                TextBox4 = ((DataRowView)dataGrid.SelectedItem).Row["Department"].ToString();
+                TextBox5 = ((DataRowView)dataGrid.SelectedItem).Row["EnrollmentType"].ToString();
+            }
 
-            //    NewStudentRegistration nsr = new NewStudentRegistration();
-            //    string test1 = ((DataRowView)dataGrid.SelectedItem).Row["StudentId"].ToString();
-            //    nsr.TextBox1 = test1;
-            //    string test2 = ((DataRowView)dataGrid.SelectedItem).Row["Firstname"].ToString();
-            //    nsr.TextBox2 = test2;
-            //    string test3 = ((DataRowView)dataGrid.SelectedItem).Row["Lastname"].ToString();
-            //    nsr.TextBox3 = test3;
-            //    string test4 = ((DataRowView)dataGrid.SelectedItem).Row["Department"].ToString();
-            //    nsr.TextBox4 = test4;
-            //    string test5 = ((DataRowView)dataGrid.SelectedItem).Row["EnrollmentType"].ToString();
-            //    nsr.TextBox5 = test5;
-            //}
+                //    NewStudentRegistration nsr = new NewStudentRegistration();
+                //    string test1 = ((DataRowView)dataGrid.SelectedItem).Row["StudentId"].ToString();
+                //    nsr.TextBox1 = test1;
+                //    string test2 = ((DataRowView)dataGrid.SelectedItem).Row["Firstname"].ToString();
+                //    nsr.TextBox2 = test2;
+                //    string test3 = ((DataRowView)dataGrid.SelectedItem).Row["Lastname"].ToString();
+                //    nsr.TextBox3 = test3;
+                //    string test4 = ((DataRowView)dataGrid.SelectedItem).Row["Department"].ToString();
+                //    nsr.TextBox4 = test4;
+                //    string test5 = ((DataRowView)dataGrid.SelectedItem).Row["EnrollmentType"].ToString();
+                //    nsr.TextBox5 = test5;
+                //}
 
-        }
+            }
 
         private void Remove_Student_Click(object sender, RoutedEventArgs e)
         {

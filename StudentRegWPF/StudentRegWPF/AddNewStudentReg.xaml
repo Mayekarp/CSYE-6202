@@ -18,7 +18,7 @@
         <TextBox x:Name="Student_Id" Width="120" VerticalAlignment="Top" TextWrapping="Wrap" Margin="150,51,0,0" Height="23" HorizontalAlignment="Left"/>
         <TextBox x:Name="First_Name1" Width="120" VerticalAlignment="Top" TextWrapping="Wrap" Margin="150,89,0,0" Height="23" HorizontalAlignment="Left"/>
         <TextBox x:Name="Last_Name1" Width="120" VerticalAlignment="Top" TextWrapping="Wrap" RenderTransformOrigin="-0.768,0.11" Margin="150,126,0,0" Height="23" HorizontalAlignment="Left"/>
-        <RadioButton x:Name="Full_Time"  VerticalAlignment="Top" Margin="372,112,0,0" HorizontalAlignment="Left" FontWeight="Bold" Content="Full Time" Checked="Full_Time_Checked"/>
+        <RadioButton x:Name="Full_Time"  VerticalAlignment="Top" Margin="372,112,0,0" HorizontalAlignment="Left" FontWeight="Bold" Content="Full Time" Checked="Full_Time_Checked" IsChecked="True"/>
         <RadioButton x:Name="Part_Time" VerticalAlignment="Top" Margin="505,112,0,0" IsEnabled="False" HorizontalAlignment="Left" FontWeight="Bold" Content="Part Time" Checked="Part_Time_Checked"/>
         <ComboBox x:Name="Department1" HorizontalAlignment="Left" Margin="150,164,0,0" VerticalAlignment="Top" Width="120">
             <ComboBox.GroupStyle>

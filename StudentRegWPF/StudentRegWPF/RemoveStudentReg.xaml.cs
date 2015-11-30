@@ -63,7 +63,7 @@ namespace StudentRegWPF
             {
                 DBconnection objcon = new DBconnection();
                 objcon.connection();
-                string sql = string.Format("Delete from Student_info where StudentID = " + Student_Id.Text);
+                string sql = string.Format("Delete from Student_info where StudentID = " + "'" + Student_Id.Text + "'");
                 SqlCommand cmd = new SqlCommand(sql, objcon.con);
 
                 try

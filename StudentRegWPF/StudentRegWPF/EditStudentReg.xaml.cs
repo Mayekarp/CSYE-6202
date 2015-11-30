@@ -64,7 +64,7 @@ namespace StudentRegWPF
             {
                 DBconnection objcon = new DBconnection();
                 objcon.connection();
-                string sql = string.Format("Update Student_Info set Firstname = '" + First_Name1.Text + "' ,Lastname = '" + Last_Name1.Text + "' where StudentID = '" + Student_Id.Text + " ' ", objcon.con);
+                string sql = string.Format("Update Student_Info set Firstname = '" + First_Name1.Text + "' ,Lastname = '" + Last_Name1.Text + "',Department = '" + Department1.Text + "', EnrollmentType = '" + Full_Time + "' where StudentID = " + "'" + Student_Id.Text + "'");
                 SqlCommand cmd = new SqlCommand(sql, objcon.con);
 
                 try

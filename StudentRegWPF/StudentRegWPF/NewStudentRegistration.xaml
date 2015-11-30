@@ -15,14 +15,14 @@
         <Label x:Name="First_Name" Content="First Name" HorizontalAlignment="Left" Margin="25,86,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="85"/>
         <Label x:Name="Last_Name" Content="Last Name" HorizontalAlignment="Left" Margin="25,123,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="85"/>
         <Label x:Name="Department" Content="Department" HorizontalAlignment="Left" Margin="25,160,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="87"/>
-        <TextBox x:Name="Student_Id_Text" HorizontalAlignment="Left" Height="23" Margin="150,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="First_Name1_Text" HorizontalAlignment="Left" Height="23" Margin="150,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Last_Name1_Text" HorizontalAlignment="Left" Height="23" Margin="150,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.768,0.11"/>
-        <RadioButton x:Name="Full_Time" Content="Full Time" HorizontalAlignment="Left" Margin="372,112,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="Student_Id_Text" HorizontalAlignment="Left" Height="23" Margin="150,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="First_Name1_Text" HorizontalAlignment="Left" Height="23" Margin="150,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="Last_Name1_Text" HorizontalAlignment="Left" Height="23" Margin="150,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.768,0.11" IsEnabled="False"/>
+        <RadioButton x:Name="Full_Time" Content="Full Time" HorizontalAlignment="Left" Margin="372,112,0,0" VerticalAlignment="Top" FontWeight="Bold" IsEnabled="False" IsChecked="True"/>
         <RadioButton x:Name="Part_Time" Content="Part Time" HorizontalAlignment="Left" Margin="505,112,0,0" VerticalAlignment="Top" FontWeight="Bold" IsEnabled="False"/>
         <GroupBox x:Name="Enrollment_Type" Header="Enrollment Type" HorizontalAlignment="Left" Margin="322,72,0,0" VerticalAlignment="Top" Height="114" Width="315" FontWeight="Bold" FontSize="13.333"/>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="25,255,0,0" VerticalAlignment="Top" Height="218" Width="635" SelectionChanged="dataGrid_SelectionChanged"/>
-        <ComboBox x:Name="Department1_Text" HorizontalAlignment="Left" Margin="150,164,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="Department1_Text" HorizontalAlignment="Left" Margin="150,164,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False">
             <ComboBox.GroupStyle>
                 <GroupStyle HeaderStringFormat="Information Systems"/>
             </ComboBox.GroupStyle>
@@ -42,6 +42,7 @@
 
 
         </ComboBox>
+        <GroupBox x:Name="Student_Info" Header="Student Info" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Height="205" Width="635" FontSize="13.333" FontWeight="Bold"/>
 
     </Grid>
 </Window>

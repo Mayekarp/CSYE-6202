@@ -33,7 +33,7 @@ namespace StudentRegWPF
             DBconnection objcon = new DBconnection();
             objcon.connection();
             if
-                (Student_Id.Text == "" || First_Name1.Text == "" || Last_Name1.Text == "")
+                (Student_Id.Text == "" || First_Name1.Text == "" || Last_Name1.Text == "" || Department1.Text == "" )
                 MessageBox.Show("Please Fill in all the Tables");
             else
             { 
