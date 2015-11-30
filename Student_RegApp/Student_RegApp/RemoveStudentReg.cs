@@ -44,12 +44,14 @@ namespace Student_RegApp
 
         public string TextBoxValue4
         {
-            get; set;
+            get { return comboBox1.SelectedItem.ToString(); }
+            set { comboBox1.SelectedItem = value; }
         }
 
         public string TextBoxValue5
         {
-            get; set;
+            get { return radioButton1.Text; }
+            set { radioButton1.Text = value; }
         }
 
         private void button1_Click(object sender, EventArgs e)
