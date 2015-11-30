@@ -60,8 +60,14 @@
     <Compile Include="AddNewStudentReg.xaml.cs">
       <DependentUpon>AddNewStudentReg.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditStudentReg.xaml.cs">
+      <DependentUpon>EditStudentReg.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NewStudentRegistration.xaml.cs">
       <DependentUpon>NewStudentRegistration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveStudentReg.xaml.cs">
+      <DependentUpon>RemoveStudentReg.xaml</DependentUpon>
     </Compile>
     <Compile Include="StudentLoginDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -74,6 +80,10 @@
       <DependentUpon>Student_RegistrationDataSet.xsd</DependentUpon>
     </Compile>
     <Page Include="AddNewStudentReg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditStudentReg.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -91,6 +101,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="NewStudentRegistration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RemoveStudentReg.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
