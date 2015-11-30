@@ -31,14 +31,15 @@ namespace Student_RegApp
 
             if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
                 MessageBox.Show("Please Fill in all the Tables");
-            else
+
             { 
-                cmd = new SqlCommand("Insert into Student_Info (StudentID, Firstname, Lastname, Department, Enrollment_Type) values (@StudentID, @Firstname, @Lastname, @Department, '" + Enrollment_Type + "')", con);
+                cmd = new SqlCommand("Insert into Student_Info (StudentID, Firstname, Lastname, Department, Enrollment_Type) values (@StudentID, @Firstname, @Lastname, @Department, '" + getEnrollmentType().ToString() + "')", con);
                 cmd.Parameters.Add("@StudentID", textBox1.Text);
                 cmd.Parameters.Add("@Firstname", textBox2.Text);
                 cmd.Parameters.Add("@Lastname", textBox3.Text);
                 cmd.Parameters.Add("@Department", comboBox1.SelectedItem.ToString());
                 cmd.Parameters.Add("@Enrollment_Type", radioButton1.Text);
+                
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Sucessfully Added New Student");
@@ -46,9 +47,23 @@ namespace Student_RegApp
                 New_Student_Registration nsr = new New_Student_Registration();
                 nsr.Show();
                 //this.Close();
+
             }
         }
 
+        private string getEnrollmentType()
+        {
+            if (radioButton1.Checked)
+            {
+                return "Full Time";
+            }
+
+            else 
+            {
+
+                return "Part Time";
+            }
+        }
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             Enrollment_Type = "Full Time";

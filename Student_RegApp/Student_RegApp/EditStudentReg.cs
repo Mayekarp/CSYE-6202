@@ -62,7 +62,7 @@ namespace Student_RegApp
                 con = new SqlConnection("Data Source = POOJAAVINASH; Initial Catalog = Student_Registration; Integrated Security = True");
                 con.Open();
                 //string sql = string.Format("Delete from Student_info where StudentID = " + Student_Text.Text);
-                String sql = string.Format("Update Student_Info set Firstname = '" + Firstname_Text.Text + "' ,Lastname = '" + Lastname_Text.Text + "',Department = '" + comboBox1.SelectedItem + "',Enrollment_Type = '" + radioButton1.Text + "' where StudentID = '" + Student_Text.Text + " ' " , con);
+                String sql = string.Format("Update Student_Info set Firstname = '" + Firstname_Text.Text + "' ,Lastname = '" + Lastname_Text.Text + "',Department = '" + comboBox1.SelectedItem + "',Enrollment_Type = '" + getEnrollmentType().ToString() + "' where StudentID = '" + Student_Text.Text + " ' " , con);
                 SqlCommand cmd = new SqlCommand(sql, con);
                 //cmd.Parameters.Add("@StudentID", Student_Text.Text);
                 //cmd.Parameters.Add("@Firstname", Firstname_Text.Text);
@@ -85,6 +85,20 @@ namespace Student_RegApp
             {
                 RemoveStudentReg rsr = new RemoveStudentReg();
                 rsr.Show();
+            }
+        }
+
+        private string getEnrollmentType()
+        {
+            if (radioButton1.Checked)
+            {
+                return "Full Time";
+            }
+
+            else
+            {
+
+                return "Part Time";
             }
         }
 

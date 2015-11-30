@@ -38,11 +38,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(79, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(69, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "username";
+            this.label1.Text = "Username";
             // 
             // textBox1
             // 
@@ -54,6 +55,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(165, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 33);
@@ -73,11 +75,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(79, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(66, 17);
             this.label2.TabIndex = 0;
-            this.label2.Text = "password";
+            this.label2.Text = "Password";
             // 
             // Form1
             // 
@@ -92,7 +95,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Student Registration Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
