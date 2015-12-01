@@ -65,12 +65,20 @@ namespace StudentRegWPF
             {
                 DBconnection objcon = new DBconnection();
                 objcon.connection();
-                string sql = string.Format("Update Student_Info set Firstname = '" + First_Name1.Text + "' ,Lastname = '" + Last_Name1.Text + "',Department = '" + Department1.Text + "', EnrollmentType = '" + Full_Time + "' where StudentID = " + "'" + Student_Id.Text + "'");
-                SqlCommand cmd = new SqlCommand(sql, objcon.con);
+                string sql = string.Format("Update Student_Info set Firstname = '" + First_Name1.Text + "' ,Lastname = '" + Last_Name1.Text + "',Department = '" + Department1.Text.ToString() + "', EnrollmentType = '" + Full_Time.Content.ToString() + "' where StudentID = " + "'" + Student_Id.Text + "'");
 
+                //string sql = "Update Student_Info set StudentId =@StudentId, Firstname =@Firstname, Lastname =@Lastname, Department =@Department, EnrollmentType ='" + Enrollment_Type + "' where StudentId = @StudentId";
+                SqlCommand cmd = new SqlCommand(sql, objcon.con);
+                //cmd.Parameters.Add("@StudentID", SqlDbType.VarChar).Value = Student_Id.Text;
+                //cmd.Parameters.Add("@Firstname", SqlDbType.VarChar).Value = First_Name1.Text;
+                //cmd.Parameters.Add("@Lastname", SqlDbType.VarChar).Value = Last_Name1.Text;
+                //cmd.Parameters.Add("@Department", SqlDbType.VarChar).Value = Department1.SelectedItem.ToString();
+                //cmd.Parameters.Add("@enrollmentType", SqlDbType.VarChar).Value = Full_Time.ToString();
+                
                 try
                 {
                     cmd.ExecuteNonQuery();
+
                     MessageBox.Show("updated successful");
                 }
                 catch (SqlException ex)
