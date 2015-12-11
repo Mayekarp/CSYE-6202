@@ -16,7 +16,7 @@ namespace AirlineReversationSystemApplication
         }
         public string calculatepricedelegate()
         {
-            return "3000";
+            return "4000";
         }
         public override string calculateseat(String seat)
         {
