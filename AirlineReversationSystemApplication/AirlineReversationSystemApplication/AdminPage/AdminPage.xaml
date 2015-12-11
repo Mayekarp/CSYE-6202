@@ -1,0 +1,38 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirlineReversationSystemApplication"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AirlineReversationSystemApplication.AdminPage"
+        mc:Ignorable="d"
+        Title="AdminPage" Height="635.017" Width="1138.765">
+    <Grid>
+        <Button x:Name="AcceptRequest" Content="Accept" HorizontalAlignment="Left" Margin="735,36,0,0" VerticalAlignment="Top" Width="154" Height="41" FontWeight="Bold" FontSize="18.667" Click="AcceptRequest_Click"/>
+        <Button x:Name="RejectRequest" Content="Reject" HorizontalAlignment="Left" Margin="735,91,0,0" VerticalAlignment="Top" Width="154" Height="44" RenderTransformOrigin="1.093,-0.103" FontWeight="Bold" FontSize="18.667" Click="RejectRequest_Click"/>
+
+        <Label x:Name="UserName" VerticalAlignment="Top" Margin="119,63,0,0" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold" Content="UserName"/>
+        <Label x:Name="FirstName" VerticalAlignment="Top" Margin="119,104,0,0" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold" Content="FirstName"/>
+        <Label x:Name="LastName" VerticalAlignment="Top" Margin="119,148,0,0" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold" Content="LastName"/>
+        <Label x:Name="EmailID" VerticalAlignment="Top" Margin="119,192,0,0" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold" Content="EmailID" Width="88"/>
+        <Label x:Name="Password" VerticalAlignment="Top" Margin="119,281,0,0" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold" Content="Password" Width="88"/>
+        <TextBox x:Name="UserName1" Width="321" VerticalAlignment="Top" TextWrapping="Wrap" Margin="366,63,0,0" Height="35" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="FirstName1" Width="321" VerticalAlignment="Top" TextWrapping="Wrap" Margin="366,104,0,0" Height="35" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="LastName1" Width="321" VerticalAlignment="Top" TextWrapping="Wrap" Margin="366,148,0,0" Height="35" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="EmailID1" Width="321" VerticalAlignment="Top" TextWrapping="Wrap" Margin="364,192,0,0" Height="35" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"/>
+        <PasswordBox x:Name="passwordBox" Width="321" VerticalAlignment="Top" Margin="364,281,0,0" Height="35" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Role" VerticalAlignment="Top" Margin="119,228,0,0" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold" Content="Role" Width="88"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="366,228,0,0" VerticalAlignment="Top" Width="321" Height="35" FontWeight="Bold" FontSize="16">
+            <System:String>Airline Carrier</System:String>
+            <System:String>Flight Crew</System:String>
+        </ComboBox>
+        <Label x:Name="UserID" Content="User ID" HorizontalAlignment="Left" Margin="119,23,0,0" VerticalAlignment="Top" Width="88" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="UserID1" HorizontalAlignment="Left" Height="35" Margin="366,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="Airline_Carrier_Page" Content="Airline Carrier" HorizontalAlignment="Left" Margin="735,148,0,0" VerticalAlignment="Top" Width="154" Height="44" FontSize="18.667" FontWeight="Bold" Click="Airline_Carrier_Page_Click"/>
+        <Button x:Name="Flight_Crew" Content="Flight Crew" HorizontalAlignment="Left" Margin="735,211,0,0" VerticalAlignment="Top" Width="154" Height="44" FontSize="18.667" FontWeight="Bold" Click="Flight_Crew_Click"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="119,345,0,0" VerticalAlignment="Top" Height="219" Width="589" MouseDoubleClick="dataGrid_MouseDoubleClick" IsReadOnly="True"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="735,345,0,0" VerticalAlignment="Top" Width="154" Height="44" FontSize="18.667" FontWeight="Bold" Click="Back_Click"/>
+        <Button x:Name="View_Customer" Content="View Customer" HorizontalAlignment="Left" Margin="735,270,0,0" VerticalAlignment="Top" Width="154" Height="44" FontSize="18.667" FontWeight="Bold" Click="View_Customer_Click"/>
+
+    </Grid>
+</Window>

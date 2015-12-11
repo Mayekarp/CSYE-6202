@@ -1,0 +1,64 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirlineReversationSystemApplication"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AirlineReversationSystemApplication.FlightCrewPage"
+        mc:Ignorable="d"
+        Title="FlightCrewPage" Height="723.302" Width="901.465">
+    <Grid Margin="0,0,2,0">
+        <Label x:Name="Welcome_to_Airline_Reservation_System" Content="Welcome to Airline Reservation System" HorizontalAlignment="Left" Margin="72,10,0,0" VerticalAlignment="Top" Width="633" Height="46" FontSize="24" FontWeight="Bold"/>
+        <DatePicker x:Name="Date1" HorizontalAlignment="Left" Margin="190,92,0,0" VerticalAlignment="Top" Height="36" Width="264" FontSize="16" FontWeight="Bold" IsTodayHighlighted="False" DisplayDateEnd="2016-12-12" DisplayDateStart="2015-12-11"/>
+        <Label x:Name="Travel_Date" Content="Travel Date" HorizontalAlignment="Left" Margin="34,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.237,-4.019" Height="36" Width="106" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Origin_City" Content="Origin City" HorizontalAlignment="Left" Margin="34,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.526,-1.5" Width="106" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Destination_City" Content="Destination City" HorizontalAlignment="Left" Margin="34,202,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" HorizontalAlignment="Left" Margin="34,373,0,0" VerticalAlignment="Top" Height="99" Width="575" SelectionChanged="dataGrid_SelectionChanged" IsReadOnly="True"/>
+        <Button x:Name="Show" Content="Show" HorizontalAlignment="Left" Margin="251,253,0,0" VerticalAlignment="Top" Width="113" FontSize="18.667" FontWeight="Bold" Height="44" Click="Show_Click"/>
+        <Button x:Name="Proceed_To_Checkout" Content="Proceed To Checkout" HorizontalAlignment="Left" Margin="646,412,0,0" VerticalAlignment="Top" Width="201" Height="45" FontSize="18.667" FontWeight="Bold" Click="Proceed_To_Checkout_Click"/>
+        <ComboBox x:Name="Origin_City1" HorizontalAlignment="Left" Margin="191,148,0,0" VerticalAlignment="Top" Width="263" Height="35" FontSize="16" FontWeight="Bold">
+            <System:String>New York</System:String>
+            <System:String>Boston</System:String>
+            <System:String>Los Angeles</System:String>
+            <System:String>Washington, D.C</System:String>
+            <System:String>San Francisco</System:String>
+            <System:String>Philadelphia</System:String>
+            <System:String>San Jose</System:String>
+            <System:String>Houston</System:String>
+            <System:String>Dallas</System:String>
+            <System:String>Texas</System:String>
+            <System:String>New Jersey</System:String>
+            <System:String>Chicago</System:String>
+            <System:String>Atlanta</System:String>
+            <System:String>Florida</System:String>
+            <System:String>Detroit</System:String>
+            <System:String>New Orleans</System:String>
+
+        </ComboBox>
+        <ComboBox x:Name="Destination_City1" HorizontalAlignment="Left" Margin="191,198,0,0" VerticalAlignment="Top" Width="263" Height="35" FontSize="16" FontWeight="Bold">
+            <System:String>New York</System:String>
+            <System:String>Boston</System:String>
+            <System:String>Los Angeles</System:String>
+            <System:String>Washington, D.C</System:String>
+            <System:String>San Francisco</System:String>
+            <System:String>Philadelphia</System:String>
+            <System:String>San Jose</System:String>
+            <System:String>Houston</System:String>
+            <System:String>Dallas</System:String>
+            <System:String>Texas</System:String>
+            <System:String>New Jersey</System:String>
+            <System:String>Chicago</System:String>
+            <System:String>Atlanta</System:String>
+            <System:String>Florida</System:String>
+            <System:String>Detroit</System:String>
+            <System:String>New Orleans</System:String>
+        </ComboBox>
+        <DataGrid x:Name="dataGrid1" HorizontalAlignment="Left" Margin="34,542,0,0" VerticalAlignment="Top" Height="121" Width="575" SelectionChanged="dataGrid1_SelectionChanged" IsReadOnly="True"/>
+        <Label x:Name="Current_Flights" Content="Current Flights" HorizontalAlignment="Left" Margin="34,342,0,0" VerticalAlignment="Top" Width="193" FontSize="18.667" FontWeight="Bold"/>
+        <Label x:Name="Booked_Flights" Content="Booked Flights" HorizontalAlignment="Left" Margin="34,502,0,0" VerticalAlignment="Top" Width="193" FontSize="18.667" FontWeight="Bold"/>
+        <Button x:Name="UnBook_Flight" Content="UnBook Flight" HorizontalAlignment="Left" Margin="629,596,0,0" VerticalAlignment="Top" Width="201" Height="43" FontSize="18.667" FontWeight="Bold" Click="UnBook_Flight_Click"/>
+        <Label x:Name="Booking_ID" Content="Booking ID" HorizontalAlignment="Left" Margin="627,542,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.055,-0.508" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="Booking_ID1" HorizontalAlignment="Left" Height="31" Margin="759,542,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71" RenderTransformOrigin="0.74,0.527" IsEnabled="False" FontSize="16" FontWeight="Bold"/>
+        <WebBrowser x:Name="Browser" HorizontalAlignment="Left" Height="237" Margin="472,92,0,0" VerticalAlignment="Top" Width="375"/>
+    </Grid>
+</Window>

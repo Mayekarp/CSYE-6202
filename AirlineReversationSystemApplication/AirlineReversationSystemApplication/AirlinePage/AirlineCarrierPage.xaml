@@ -1,0 +1,36 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirlineReversationSystemApplication"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AirlineReversationSystemApplication.AirlineCarrierPage"
+        mc:Ignorable="d"
+        Title="AirlineCarrierPage" Height="702.904" Width="1096.324">
+    <Grid>
+        <Label x:Name="Airline_Name" Content="Airline Name" HorizontalAlignment="Left" Margin="47,93,0,0" VerticalAlignment="Top" Height="37" Width="140" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Flight_No_" Content="Flight No." HorizontalAlignment="Left" Margin="47,136,0,0" VerticalAlignment="Top" Height="35" Width="140" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Date" Content="Date" HorizontalAlignment="Left" Margin="587,53,0,0" VerticalAlignment="Top" Height="35" Width="140" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Departure_Time" Content="Departure Time" HorizontalAlignment="Left" Margin="47,186,0,0" VerticalAlignment="Top" Height="33" Width="140" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Arrival_Time" Content="Arrival Time" HorizontalAlignment="Left" Margin="47,240,0,0" VerticalAlignment="Top" Height="35" Width="140" FontSize="16" FontWeight="Bold" RenderTransformOrigin="1.259,2.104"/>
+        <TextBox x:Name="Airline_Company" HorizontalAlignment="Left" Height="35" Margin="258,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
+        <TextBox x:Name="Flight_No" HorizontalAlignment="Left" Height="35" Margin="258,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
+        <DatePicker x:Name="Date1" HorizontalAlignment="Left" Margin="765,50,0,0" VerticalAlignment="Top" Height="35" Width="263" FontSize="16" FontWeight="Bold" IsTodayHighlighted="False" DisplayDateEnd="2015-12-11" DisplayDateStart="2015-12-11"/>
+        <TextBox x:Name="Department_Time" HorizontalAlignment="Left" Height="35" Margin="258,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
+        <TextBox x:Name="Arrival_Time1" HorizontalAlignment="Left" Height="35" Margin="258,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
+        <Button x:Name="Add_Flight" Content="Add Flight" HorizontalAlignment="Left" Margin="335,325,0,0" VerticalAlignment="Top" Width="156" Height="66" FontSize="18.667" FontWeight="Bold" Click="Add_Flight_Click"/>
+        <Button x:Name="Update" Content="Update" HorizontalAlignment="Left" Margin="567,325,0,0" VerticalAlignment="Top" Width="166" Height="66" FontSize="18.667" FontWeight="Bold" Click="Update_Click"/>
+        <Label x:Name="Origin_City" Content="Origin City" HorizontalAlignment="Left" Margin="587,136,0,0" VerticalAlignment="Top" Height="35" Width="146" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Destination_City" Content="Destination City" HorizontalAlignment="Left" Margin="587,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.875,-0.214" Height="35" Width="146" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="Origin_City1" HorizontalAlignment="Left" Height="35" Margin="765,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
+        <TextBox x:Name="Destination_City1" HorizontalAlignment="Left" Height="35" Margin="765,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
+        <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="817,325,0,0" VerticalAlignment="Top" Width="165" Height="66" FontSize="18.667" FontWeight="Bold" Click="Delete_Click"/>
+        <Label x:Name="Airline_ID" Content="Airline ID" HorizontalAlignment="Left" Margin="47,54,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="140" Height="35"/>
+        <TextBox x:Name="Airline_ID1" HorizontalAlignment="Left" Height="35" Margin="258,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="69,415,0,0" VerticalAlignment="Top" Height="214" Width="959"  MouseDoubleClick="dataGrid_MouseDoubleClick" IsReadOnly="True"/>
+        <Label x:Name="Seat" Content="Seat" HorizontalAlignment="Left" Margin="587,93,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="140" Height="35"/>
+        <TextBox x:Name="Seat1" HorizontalAlignment="Left" Height="35" Margin="765,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" IsEnabled="False" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="Logout" Content="Logout" HorizontalAlignment="Left" Margin="110,327,0,0" VerticalAlignment="Top" Width="156" Height="66" FontSize="18.667" FontWeight="Bold" Click="Logout_Click"/>
+
+    </Grid>
+</Window>
