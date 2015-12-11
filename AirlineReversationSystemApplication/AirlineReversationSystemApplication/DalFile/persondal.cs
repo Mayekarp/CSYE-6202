@@ -185,6 +185,29 @@ namespace AirlineReversationSystemApplication
             return result != 0;
         }
 
+        public bool checkifusernameexist(Person p1)
+        {
+
+            string userName = p1.UserName;
+            //string emailID = p1.EmailID;
+            objcon.connection();
+            string query1 = "Select * from Login_Details where UserName =@UserName";
+            SqlCommand cmd1 = new SqlCommand(query1, objcon.con);
+            cmd1.Parameters.AddWithValue("@UserName", userName);
+            // cmd1.Parameters.AddWithValue("@EmailID", emailID);
+            SqlDataReader dr = cmd1.ExecuteReader();
+            if (dr.HasRows)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
+        }
+
         // Flight Crew
 
         public bool addLoginFlightCrew(Person p1)
@@ -217,32 +240,40 @@ namespace AirlineReversationSystemApplication
                 int result = cmd1.ExecuteNonQuery();
                 return result != 0;
             }
-
-
-
         }
 
-        public bool checkifusernameexist(Person p1)
+        public List<Person> displayflightcrewDetails(Person p1)
         {
-           
-                string userName = p1.UserName;
-                //string emailID = p1.EmailID;
-                objcon.connection();
-                string query1 = "Select * from Login_Details where UserName =@UserName";
-                SqlCommand cmd1 = new SqlCommand(query1, objcon.con);
-                cmd1.Parameters.AddWithValue("@UserName", userName);
-                // cmd1.Parameters.AddWithValue("@EmailID", emailID);
-                SqlDataReader dr =  cmd1.ExecuteReader();
+            string roletype = p1.Role;
+            //string emailID = p1.EmailID;
+            objcon.connection();
+            string query1 = "Select * from Login_Details where Role =@Role";
+            SqlCommand cmd1 = new SqlCommand(query1, objcon.con);
+            cmd1.Parameters.AddWithValue("@Role", roletype);
+            List<Person> personlist = new List<Person>();
+            SqlDataReader dr = cmd1.ExecuteReader();
             if (dr.HasRows)
             {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-            
-            
+                while (dr.Read())
+                {
+                    if(p1.Role == "Flight Crew")
+                    {
+                        Person p = new Person();
+                        p.UserName = dr.GetString(0);
+                        p.Password = dr.GetString(1);
+                        p.Role = dr.GetString(2);
+                        p.FirstName = dr.GetString(3);
+                        p.LastName = dr.GetString(4);
+                        p.UserID = dr.GetInt32(5);
+                        p.EmailID = dr.GetString(6);
+
+                        personlist.Add(p);
+                    }
+                    
+  
+                }
+            }return personlist;
+           
         }
 
     }

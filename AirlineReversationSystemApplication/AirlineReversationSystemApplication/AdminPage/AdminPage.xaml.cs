@@ -108,7 +108,7 @@ namespace AirlineReversationSystemApplication
         private void Flight_Crew_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            CrewPage cp = new CrewPage();
+            CrewPage cp = new CrewPage(p);
             cp.Show();
         }
 

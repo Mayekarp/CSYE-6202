@@ -83,7 +83,7 @@ namespace AirlineReversationSystemApplication
                             
                             MessageBox.Show("Username and Password is Correct");
                             this.Hide();
-                            CrewPage fc = new CrewPage();
+                            CrewPage fc = new CrewPage(p1);
                             fc.Show();
                         }
 

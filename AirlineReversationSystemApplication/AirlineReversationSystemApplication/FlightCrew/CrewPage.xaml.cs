@@ -19,9 +19,27 @@ namespace AirlineReversationSystemApplication
     /// </summary>
     public partial class CrewPage : Window
     {
-        public CrewPage()
+        Person p;
+        public CrewPage(Person p)
         {
             InitializeComponent();
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+            this.ResizeMode = ResizeMode.NoResize;
+            this.p = p;
+            populateflightcrew();
+            populateAirlineCarrier();
+        }
+
+        persondal pd = new persondal();
+        public void populateflightcrew()
+        {
+           FlightCrewDataGrid.ItemsSource = pd.displayflightcrewDetails(p);
+        }
+
+        public void populateAirlineCarrier()
+        {
+            airlinedal air = new airlinedal();
+            AirlineDataGrid.ItemsSource = air.getAirlineCarrierFlightDetails(p);
         }
     }
 }
