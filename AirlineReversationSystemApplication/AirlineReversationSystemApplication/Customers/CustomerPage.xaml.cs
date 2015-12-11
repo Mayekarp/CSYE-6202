@@ -60,7 +60,7 @@ namespace AirlineReversationSystemApplication
                 {
                     
                     StringBuilder queryaddress = new StringBuilder();
-                    queryaddress.Append("https://www.google.com/maps?=");
+                    queryaddress.Append("https://www.google.com/maps");
                     if (origincity != string.Empty)
                     {
                         queryaddress.Append(origincity + "," + "+");
