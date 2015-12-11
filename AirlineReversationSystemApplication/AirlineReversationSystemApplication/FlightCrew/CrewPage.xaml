@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="CrewPage" Height="339.334" Width="654.167">
     <Grid>
-        <Label x:Name="Flight_Crew_" Content="Flight Crew " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="36" Width="259" FontSize="18.667" FontWeight="Bold"/>
+        <Label x:Name="Flight_Crew_" Content="Flight Crew " HorizontalAlignment="Left" Margin="240,10,0,0" VerticalAlignment="Top" Height="36" Width="258" FontSize="18.667" FontWeight="Bold"/>
         <DataGrid x:Name="FlightCrewDataGrid" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Height="81" Width="520" IsReadOnly="True"/>
         <DataGrid x:Name="AirlineDataGrid" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Height="76" Width="520" IsReadOnly="True"/>
         <Label x:Name="Flight_Crew_Details" Content="Flight Crew Details" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>

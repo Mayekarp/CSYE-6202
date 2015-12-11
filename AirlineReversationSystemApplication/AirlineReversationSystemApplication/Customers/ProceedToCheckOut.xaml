@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AirlineReversationSystemApplication"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AirlineReversationSystemApplication.ProceedToCheckOut"
         mc:Ignorable="d"
-        Title="ProceedToCheckOut" Height="614.9" Width="993.225">
+        Title="ProceedToCheckOut" Height="515.499" Width="981.667">
     <Grid>
         <Label x:Name="Travel_Date" Content="Travel Date" HorizontalAlignment="Left" Margin="34,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.237,-4.019" Height="36" Width="106" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
         <Label x:Name="Origin_City" Content="Origin City" HorizontalAlignment="Left" Margin="34,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.526,-1.5" Width="106" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
@@ -30,7 +30,7 @@
             <System:String>9</System:String>
             <System:String>10</System:String>
         </ComboBox>
-        <Button x:Name="Proceed_for_Payement" Content="Payement" HorizontalAlignment="Left" Margin="238,383,0,0" VerticalAlignment="Top" Width="147" Height="57" FontSize="18.667" FontWeight="Bold" Click="Proceed_for_Payement_Click"/>
+        <Button x:Name="Proceed_for_Payement" Content="Payement" HorizontalAlignment="Left" Margin="573,383,0,0" VerticalAlignment="Top" Width="147" Height="57" FontSize="18.667" FontWeight="Bold" Click="Proceed_for_Payement_Click"/>
         <Label x:Name="Air_Ticket_Details" Content="Air Ticket Details" HorizontalAlignment="Left" Margin="34,28,0,0" VerticalAlignment="Top" Width="305" FontSize="18.667" FontWeight="Bold"/>
         <Label x:Name="Airline_Name" Content="Airline Name" HorizontalAlignment="Left" Margin="524,94,0,0" VerticalAlignment="Top" Height="35" Width="140" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
         <Label x:Name="Departure_Time" Content="Departure Time" HorizontalAlignment="Left" Margin="524,150,0,0" VerticalAlignment="Top" Height="33" Width="140" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
@@ -38,7 +38,7 @@
         <TextBox x:Name="Airline_Company" HorizontalAlignment="Left" Height="35" Margin="683,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
         <TextBox x:Name="Department_Time" HorizontalAlignment="Left" Height="35" Margin="683,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
         <TextBox x:Name="Arrival_Time1" HorizontalAlignment="Left" Height="35" Margin="683,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
-        <Button x:Name="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="469,383,0,0" VerticalAlignment="Top" Width="147" Height="57" FontSize="18.667" FontWeight="Bold" Click="Cancel_Click"/>
+        <Button x:Name="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="308,383,0,0" VerticalAlignment="Top" Width="147" Height="57" FontSize="18.667" FontWeight="Bold" Click="Cancel_Click"/>
         <Label x:Name="Price" Content="Price" HorizontalAlignment="Left" Margin="524,250,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.532,0.161" Width="140" Height="35" IsEnabled="False"/>
         <TextBox x:Name="Price1" HorizontalAlignment="Left" Height="35" Margin="683,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
         <TextBox x:Name="Origin_City1" HorizontalAlignment="Left" Height="35" Margin="192,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontWeight="Bold" FontSize="16" IsEnabled="False"/>

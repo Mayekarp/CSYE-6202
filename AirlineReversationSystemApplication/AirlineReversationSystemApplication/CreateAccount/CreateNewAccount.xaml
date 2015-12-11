@@ -6,30 +6,30 @@
         xmlns:local="clr-namespace:AirlineReversationSystemApplication"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AirlineReversationSystemApplication.CreateNewAccount"
         mc:Ignorable="d"
-        Title="CreateNewAccount" Height="671.25" Width="992.143">
+        Title="CreateNewAccount" Height="675.25" Width="794.143">
     <Grid>
-        <Label x:Name="UserName" Content="UserName" HorizontalAlignment="Left" Margin="121,133,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <Label x:Name="FirstName" Content="FirstName" HorizontalAlignment="Left" Margin="122,169,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <Label x:Name="LastName" Content="LastName" HorizontalAlignment="Left" Margin="122,205,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <Label x:Name="EmailID" Content="EmailID" HorizontalAlignment="Left" Margin="122,241,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <Label x:Name="Password" Content="Password" HorizontalAlignment="Left" Margin="128,359,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <Label x:Name="Re_Enter_Password" Content="Re-Enter Password" HorizontalAlignment="Left" Margin="126,418,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="UserName1" HorizontalAlignment="Left" Height="31" Margin="366,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321"/>
-        <TextBox x:Name="FirstName1" HorizontalAlignment="Left" Height="31" Margin="366,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321"/>
-        <TextBox x:Name="LastName1" HorizontalAlignment="Left" Height="31" Margin="366,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321"/>
-        <TextBox x:Name="EmailID1" HorizontalAlignment="Left" Height="31" Margin="366,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="366,359,0,0" VerticalAlignment="Top" Height="36" Width="321"/>
-        <PasswordBox x:Name="ConfirmpasswordBox" HorizontalAlignment="Left" Margin="366,418,0,0" VerticalAlignment="Top" Height="36" Width="321"/>
-        <Button x:Name="Create" Content="Create" HorizontalAlignment="Left" Margin="366,505,0,0" VerticalAlignment="Top" Width="139" Height="63" FontSize="18.667" FontWeight="Bold" Click="Create_Click"/>
-        <Button x:Name="Reset" Content="Reset" HorizontalAlignment="Left" Margin="545,505,0,0" VerticalAlignment="Top" Width="142" Height="63" RenderTransformOrigin="0.571,0.735" FontSize="18.667" FontWeight="Bold" Click="Cancel_Click"/>
-        <Label x:Name="Role" Content="Role" HorizontalAlignment="Left" Margin="128,277,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="366,277,0,0" VerticalAlignment="Top" Width="321" Height="31" FontWeight="Bold" FontSize="13.333">
+        <Label x:Name="UserName" Content="UserName" HorizontalAlignment="Left" Margin="121,133,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="FirstName" Content="FirstName" HorizontalAlignment="Left" Margin="122,169,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="LastName" Content="LastName" HorizontalAlignment="Left" Margin="122,205,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="EmailID" Content="EmailID" HorizontalAlignment="Left" Margin="122,241,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="Password" Content="Password" HorizontalAlignment="Left" Margin="128,359,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="Re_Enter_Password" Content="Re-Enter Password" HorizontalAlignment="Left" Margin="126,418,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="UserName1" HorizontalAlignment="Left" Height="31" Margin="366,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321" FontSize="20"/>
+        <TextBox x:Name="FirstName1" HorizontalAlignment="Left" Height="31" Margin="366,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321" FontSize="20"/>
+        <TextBox x:Name="LastName1" HorizontalAlignment="Left" Height="31" Margin="366,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321" FontSize="20"/>
+        <TextBox x:Name="EmailID1" HorizontalAlignment="Left" Height="31" Margin="366,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321" FontSize="20"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="366,359,0,0" VerticalAlignment="Top" Height="36" Width="321" FontSize="20"/>
+        <PasswordBox x:Name="ConfirmpasswordBox" HorizontalAlignment="Left" Margin="366,418,0,0" VerticalAlignment="Top" Height="36" Width="321" FontSize="20"/>
+        <Button x:Name="Create" Content="Create" HorizontalAlignment="Left" Margin="128,521,0,0" VerticalAlignment="Top" Width="139" Height="63" FontSize="20" FontWeight="Bold" Click="Create_Click"/>
+        <Button x:Name="Reset" Content="Reset" HorizontalAlignment="Left" Margin="307,521,0,0" VerticalAlignment="Top" Width="142" Height="63" RenderTransformOrigin="0.571,0.735" FontSize="20" FontWeight="Bold" Click="Cancel_Click"/>
+        <Label x:Name="Role" Content="Role" HorizontalAlignment="Left" Margin="128,277,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="366,277,0,0" VerticalAlignment="Top" Width="321" Height="31" FontWeight="Bold" FontSize="20">
             <System:String>Airline Carrier</System:String>
             <System:String>Customer</System:String>
             <System:String>Flight Crew</System:String>
         </ComboBox>
-        <GroupBox x:Name="Create_New_Account" Header="Create New Account" HorizontalAlignment="Left" Margin="69,58,0,0" VerticalAlignment="Top" Height="421" Width="832" FontSize="21.333" FontWeight="Bold"/>
-        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="740,505,0,0" VerticalAlignment="Top" Width="161" Height="63" FontSize="18.667" FontWeight="Bold" Click="Back_Click"/>
+        <GroupBox x:Name="Create_New_Account" Header="Create New Account" HorizontalAlignment="Left" Margin="69,58,0,0" VerticalAlignment="Top" Height="421" Width="666" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="508,521,0,0" VerticalAlignment="Top" Width="161" Height="63" FontSize="20" FontWeight="Bold" Click="Back_Click"/>
 
     </Grid>
 </Window>

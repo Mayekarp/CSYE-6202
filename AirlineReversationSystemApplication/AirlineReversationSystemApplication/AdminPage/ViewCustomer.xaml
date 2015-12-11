@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:AirlineReversationSystemApplication"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AirlineReversationSystemApplication.ViewCustomer"
         mc:Ignorable="d"
-        Title="ViewCustomer" Height="569.733" Width="1246.667">
+        Title="ViewCustomer" Height="601.861" Width="1238.1">
     <Grid>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,318,0,0" VerticalAlignment="Top" Height="177" Width="1193" SelectionChanged="dataGrid_SelectionChanged" IsReadOnly="True"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="25,355,0,0" VerticalAlignment="Top" Height="177" Width="1193" SelectionChanged="dataGrid_SelectionChanged" IsReadOnly="True"/>
         <Label x:Name="Airline_Name" Content="Airline Name" HorizontalAlignment="Left" Margin="25,72,0,0" VerticalAlignment="Top" Height="35" Width="140" FontSize="16" FontWeight="Bold"/>
         <Label x:Name="Flight_No_" Content="Flight No." HorizontalAlignment="Left" Margin="25,119,0,0" VerticalAlignment="Top" Height="35" Width="140" FontSize="16" FontWeight="Bold"/>
         <Label x:Name="Departure_Time" Content="Departure Time" HorizontalAlignment="Left" Margin="25,167,0,0" VerticalAlignment="Top" Height="35" Width="140" FontSize="16" FontWeight="Bold"/>
@@ -17,18 +17,18 @@
         <TextBox x:Name="Flight_No" HorizontalAlignment="Left" Height="35" Margin="236,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold"/>
         <TextBox x:Name="Department_Time" HorizontalAlignment="Left" Height="35" Margin="236,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold"/>
         <TextBox x:Name="Arrival_Time1" HorizontalAlignment="Left" Height="35" Margin="236,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold"/>
-        <Label x:Name="Date" Content="Date" HorizontalAlignment="Left" Margin="694,36,0,0" VerticalAlignment="Top" Height="35" Width="140" FontSize="16" FontWeight="Bold"/>
-        <DatePicker x:Name="Date1" HorizontalAlignment="Left" Margin="872,33,0,0" VerticalAlignment="Top" Height="35" Width="263" FontSize="16" FontWeight="Bold" IsTodayHighlighted="False" DisplayDateEnd="2016-01-01" DisplayDateStart="2015-12-11"/>
-        <Label x:Name="Origin_City" Content="Origin City" HorizontalAlignment="Left" Margin="694,119,0,0" VerticalAlignment="Top" Height="35" Width="146" FontSize="16" FontWeight="Bold"/>
-        <Label x:Name="Destination_City" Content="Destination City" HorizontalAlignment="Left" Margin="694,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.875,-0.214" Height="35" Width="146" FontSize="16" FontWeight="Bold"/>
-        <Label x:Name="EmailID" Content="EmailID" HorizontalAlignment="Left" Margin="694,76,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="140"/>
-        <TextBox x:Name="EmailID1" HorizontalAlignment="Left" Height="35" Margin="872,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="Update" Content="Update" HorizontalAlignment="Left" Margin="266,251,0,0" VerticalAlignment="Top" Width="213" Height="56" FontSize="18.667" FontWeight="Bold" Click="Update_Click"/>
-        <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="630,251,0,0" VerticalAlignment="Top" Width="210" Height="56" FontSize="18.667" FontWeight="Bold" Click="Delete_Click"/>
+        <Label x:Name="Date" Content="Date" HorizontalAlignment="Left" Margin="580,36,0,0" VerticalAlignment="Top" Height="35" Width="140" FontSize="16" FontWeight="Bold"/>
+        <DatePicker x:Name="Date1" HorizontalAlignment="Left" Margin="758,33,0,0" VerticalAlignment="Top" Height="35" Width="263" FontSize="16" FontWeight="Bold" IsTodayHighlighted="False" DisplayDateEnd="2016-01-01" DisplayDateStart="2015-12-11"/>
+        <Label x:Name="Origin_City" Content="Origin City" HorizontalAlignment="Left" Margin="580,119,0,0" VerticalAlignment="Top" Height="35" Width="146" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Destination_City" Content="Destination City" HorizontalAlignment="Left" Margin="580,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.875,-0.214" Height="35" Width="146" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="EmailID" Content="EmailID" HorizontalAlignment="Left" Margin="580,76,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="140"/>
+        <TextBox x:Name="EmailID1" HorizontalAlignment="Left" Height="35" Margin="758,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="Update" Content="Update" HorizontalAlignment="Left" Margin="236,271,0,0" VerticalAlignment="Top" Width="213" Height="56" FontSize="18.667" FontWeight="Bold" Click="Update_Click"/>
+        <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="624,271,0,0" VerticalAlignment="Top" Width="210" Height="56" FontSize="18.667" FontWeight="Bold" Click="Delete_Click"/>
         <Label x:Name="Booking_ID" Content="Booking ID" HorizontalAlignment="Left" Margin="25,33,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="140" Height="35"/>
         <TextBox x:Name="BookingID" HorizontalAlignment="Left" Height="35" Margin="236,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" IsEnabled="False" FontSize="16" FontWeight="Bold"/>
 
-        <ComboBox x:Name="Origin_City1" HorizontalAlignment="Left" Margin="872,117,0,0" VerticalAlignment="Top" Width="263" Height="35" FontSize="16" FontWeight="Bold">
+        <ComboBox x:Name="Origin_City1" HorizontalAlignment="Left" Margin="758,117,0,0" VerticalAlignment="Top" Width="263" Height="35" FontSize="16" FontWeight="Bold">
             <System:String>New York</System:String>
             <System:String>Boston</System:String>
             <System:String>Los Angeles</System:String>
@@ -47,7 +47,7 @@
             <System:String>New Orleans</System:String>
 
         </ComboBox>
-        <ComboBox x:Name="Destination_City1" HorizontalAlignment="Left" Margin="872,167,0,0" VerticalAlignment="Top" Width="263" Height="35" FontSize="16" FontWeight="Bold">
+        <ComboBox x:Name="Destination_City1" HorizontalAlignment="Left" Margin="758,167,0,0" VerticalAlignment="Top" Width="263" Height="35" FontSize="16" FontWeight="Bold">
             <System:String>New York</System:String>
             <System:String>Boston</System:String>
             <System:String>Los Angeles</System:String>

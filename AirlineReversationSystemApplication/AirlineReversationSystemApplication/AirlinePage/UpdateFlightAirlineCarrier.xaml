@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AirlineReversationSystemApplication"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AirlineReversationSystemApplication.UpdateFlightAirlineCarrier"
         mc:Ignorable="d"
-        Title="UpdateFlightAirlineCarrier" Height="530.074" Width="1122.793">
+        Title="UpdateFlightAirlineCarrier" Height="472.284" Width="1070.981">
     <Grid>
         <Button x:Name="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="587,310,0,0" VerticalAlignment="Top" Width="240" Height="82" FontSize="18.667" FontWeight="Bold" Click="Cancel_Click"/>
         <Button x:Name="Update" Content="Update" HorizontalAlignment="Left" Margin="170,310,0,0" VerticalAlignment="Top" Width="232" Height="82" FontSize="18.667" FontWeight="Bold" Click="Update_Click_1"/>

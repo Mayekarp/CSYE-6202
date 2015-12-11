@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AirlineReversationSystemApplication"
         mc:Ignorable="d"
-        Title="Payement" Height="362.9" Width="508">
+        Title="Payement" Height="383.364" Width="563.936">
     <Grid>
-        <Label x:Name="Make_a_Payement" Content="Make a Payement" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="230" FontSize="18.667" FontWeight="Bold"/>
+        <Label x:Name="Make_a_Payement" Content="Make a Payement" HorizontalAlignment="Left" Margin="153,14,0,0" VerticalAlignment="Top" Width="230" FontSize="18.667" FontWeight="Bold"/>
         <TextBox x:Name="Email_ID1" HorizontalAlignment="Left" Height="35" Margin="169,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" FontSize="16" FontWeight="Bold"/>
-        <Label x:Name="Email_ID" Content="Email ID" HorizontalAlignment="Left" Margin="39,70,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="115"/>
+        <Label x:Name="Email_ID" Content="Email ID" HorizontalAlignment="Left" Margin="84,70,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="115"/>
         <TextBox x:Name="Card_Number1" HorizontalAlignment="Left" Height="35" Margin="169,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" FontSize="16" FontWeight="Bold" UndoLimit="101" MaxLength="16"/>
-        <Label x:Name="Card_Number" Content="Card Number" HorizontalAlignment="Left" Margin="39,124,0,0" VerticalAlignment="Top" Width="115" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="CVV1" HorizontalAlignment="Left" Height="28" Margin="129,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84" FontSize="16" FontWeight="Bold" MaxLength="3"/>
-        <Label x:Name="CVV" Content="CVV" HorizontalAlignment="Left" Margin="72,184,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.512,0.903"/>
-        <Label x:Name="Month_Year" Content="MM/YY" HorizontalAlignment="Left" Margin="239,187,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="Month_Year1" HorizontalAlignment="Left" Height="28" Margin="329,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84" FontSize="16" FontWeight="Bold" MaxLength="4"/>
-        <Button x:Name="CheckOut" Content="Checkout" HorizontalAlignment="Left" Margin="129,245,0,0" VerticalAlignment="Top" Width="131" Height="44" FontSize="18.667" FontWeight="Bold" Click="CheckOut_Click"/>
-        <Button x:Name="Logout" Content="Logout" HorizontalAlignment="Left" Margin="388,20,0,0" VerticalAlignment="Top" Width="91" Height="25" FontSize="16" FontWeight="Bold" Click="Logout_Click"/>
+        <Label x:Name="Card_Number" Content="Card Number" HorizontalAlignment="Left" Margin="49,124,0,0" VerticalAlignment="Top" Width="115" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="CVV1" HorizontalAlignment="Left" Height="28" Margin="169,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71" FontSize="16" FontWeight="Bold" MaxLength="3"/>
+        <Label x:Name="CVV" Content="CVV" HorizontalAlignment="Left" Margin="113,193,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.512,0.903"/>
+        <Label x:Name="Month_Year" Content="MM/YY" HorizontalAlignment="Left" Margin="274,190,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.249,0.438"/>
+        <TextBox x:Name="Month_Year1" HorizontalAlignment="Left" Height="28" Margin="361,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" FontSize="16" FontWeight="Bold" MaxLength="4"/>
+        <Button x:Name="CheckOut" Content="Checkout" HorizontalAlignment="Left" Margin="129,259,0,0" VerticalAlignment="Top" Width="111" Height="44" FontSize="18.667" FontWeight="Bold" Click="CheckOut_Click"/>
+        <Button x:Name="Logout" Content="Logout" HorizontalAlignment="Left" Margin="440,20,0,0" VerticalAlignment="Top" Width="91" Height="25" FontSize="16" FontWeight="Bold" Click="Logout_Click"/>
+        <Button x:Name="Reset" Content="Reset" HorizontalAlignment="Left" Margin="326,259,0,0" VerticalAlignment="Top" Width="99" Height="44" Click="button_Click" FontSize="18.667" FontWeight="Bold"/>
 
     </Grid>
 </Window>

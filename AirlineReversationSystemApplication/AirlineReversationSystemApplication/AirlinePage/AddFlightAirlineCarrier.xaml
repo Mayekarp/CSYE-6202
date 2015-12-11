@@ -8,9 +8,9 @@
         mc:Ignorable="d"
         Title="AddFlightAirlineCarrier" Height="443.382" Width="1131.618">
     <Grid Height="412" VerticalAlignment="Bottom">
-        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Margin="47,284,0,0" VerticalAlignment="Top" Width="190" Height="60" FontSize="18.667" FontWeight="Bold" Click="Add_Click"/>
-        <Button x:Name="Cancel" Content="Reset" HorizontalAlignment="Left" Margin="357,284,0,0" VerticalAlignment="Top" Width="193" Height="60" FontSize="18.667" FontWeight="Bold" Click="Cancel_Click"/>
-        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="675,284,0,0" VerticalAlignment="Top" Width="172" Height="60" FontSize="18.667" FontWeight="Bold" Click="Back_Click"/>
+        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Margin="47,321,0,0" VerticalAlignment="Top" Width="190" Height="60" FontSize="18.667" FontWeight="Bold" Click="Add_Click"/>
+        <Button x:Name="Cancel" Content="Reset" HorizontalAlignment="Left" Margin="357,321,0,0" VerticalAlignment="Top" Width="193" Height="60" FontSize="18.667" FontWeight="Bold" Click="Cancel_Click"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="675,321,0,0" VerticalAlignment="Top" Width="172" Height="60" FontSize="18.667" FontWeight="Bold" Click="Back_Click"/>
         <Label x:Name="Airline_Name" Content="Airline Name" HorizontalAlignment="Left" Margin="47,93,0,0" VerticalAlignment="Top" Height="37" Width="140" FontSize="16" FontWeight="Bold"/>
         <Label x:Name="Flight_No_" Content="Flight No." HorizontalAlignment="Left" Margin="47,136,0,0" VerticalAlignment="Top" Height="41" Width="140" FontSize="16" FontWeight="Bold"/>
         <Label x:Name="Date" Content="Date" HorizontalAlignment="Left" Margin="587,53,0,0" VerticalAlignment="Top" Height="35" Width="140" FontSize="16" FontWeight="Bold"/>
@@ -44,7 +44,7 @@
             <System:String>Florida</System:String>
             <System:String>Detroit</System:String>
             <System:String>New Orleans</System:String>
-            
+
         </ComboBox>
         <ComboBox x:Name="Destination_City1" HorizontalAlignment="Left" Margin="765,186,0,0" VerticalAlignment="Top" Width="263" Height="35" FontSize="16" FontWeight="Bold">
             <System:String>New York</System:String>

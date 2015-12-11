@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AirlineReversationSystemApplication"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AirlineReversationSystemApplication.RemoveFlightAirlineCarrier"
         mc:Ignorable="d"
-        Title="RemoveFlightAirlineCarrier" Height="559.527" Width="1078.378">
+        Title="RemoveFlightAirlineCarrier" Height="435.421" Width="1072.068">
     <Grid>
         <Button x:Name="Remove" Content="Remove" HorizontalAlignment="Left" Margin="235,298,0,0" VerticalAlignment="Top" Width="180" Height="58" FontSize="18.667" FontWeight="Bold" Click="Remove_Click"/>
         <Button x:Name="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="546,298,0,0" VerticalAlignment="Top" Width="187" Height="58" RenderTransformOrigin="0.545,1.265" FontSize="18.667" FontWeight="Bold" Click="Cancel_Click"/>

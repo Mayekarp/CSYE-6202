@@ -32,10 +32,12 @@ namespace AirlineReversationSystemApplication
             populateBookedFlights();
             this.customer = customer;
             Proceed_To_Checkout.IsEnabled = false;
+            
         }
 
         private void Show_Click(object sender, RoutedEventArgs e)
         {
+            
             Proceed_To_Checkout.IsEnabled = true;
 
             AirlineCarrier ac = new AirlineCarrier();
@@ -56,6 +58,7 @@ namespace AirlineReversationSystemApplication
 
                 try
                 {
+                    
                     StringBuilder queryaddress = new StringBuilder();
                     queryaddress.Append("https://www.google.com/maps?=");
                     if (origincity != string.Empty)

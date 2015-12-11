@@ -130,5 +130,19 @@ namespace AirlineReversationSystemApplication
             return true;   
         }
 
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            if (CVV1.Text == "" || Card_Number1.Text == "" || Month_Year1.Text == "" || Email_ID1.Text == "")
+            {
+                MessageBox.Show("Fill all Fields");
+            }
+            else
+            {
+                Email_ID1.Clear();
+                Card_Number1.Clear();
+                CVV1.Clear();
+                Month_Year1.Clear();
+            }
+        }
     }
 }
