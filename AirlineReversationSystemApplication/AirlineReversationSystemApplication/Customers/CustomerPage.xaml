@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="FlightCrewPage" Height="767.302" Width="1069.965">
     <Grid Margin="0,0,2,0">
-        <Image x:Name="image2" HorizontalAlignment="Left" Height="706" Margin="0,29,-15,0" VerticalAlignment="Top" Width="1076" Source="/AirlineReversationSystemApplication;component/Images/vac1.jpg"/>
+        <Image x:Name="image2" HorizontalAlignment="Left" Height="706" Margin="0,29,-15,0" VerticalAlignment="Top" Width="1076"/>
         <Label x:Name="Welcome_to_Airline_Reservation_System" Content="Welcome to Airline Reservation System" HorizontalAlignment="Left" Margin="126,56,0,0" VerticalAlignment="Top" Width="773" Height="72" FontSize="40" FontWeight="Bold"/>
         <DatePicker x:Name="Date1" HorizontalAlignment="Left" Margin="252,185,0,0" VerticalAlignment="Top" Height="43" Width="250" FontSize="20" FontWeight="Bold" IsTodayHighlighted="False" DisplayDateEnd="2016-12-12" DisplayDateStart="2015-12-11"/>
         <Label x:Name="Travel_Date" Content="Travel Date" HorizontalAlignment="Left" Margin="70,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.237,-4.019" Height="36" Width="126" FontSize="20" FontWeight="Bold"/>
