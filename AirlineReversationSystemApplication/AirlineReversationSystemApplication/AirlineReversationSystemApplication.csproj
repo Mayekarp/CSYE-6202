@@ -184,12 +184,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="BalsamiqMockups\BalsamiqMockups_AirlineReservationSystem.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="UmlDiagrams\UmlDiagram_AirlineReservationSystem.pdf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -208,6 +210,7 @@
   <ItemGroup>
     <Resource Include="Images\Capture.JPG" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
