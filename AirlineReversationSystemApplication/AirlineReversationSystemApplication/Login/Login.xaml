@@ -12,7 +12,7 @@
         <TextBox x:Name="txtBoxusername" HorizontalAlignment="Right" Height="35" Margin="0,82,212,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" FontSize="16" FontWeight="Bold"/>
         <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="295,163,0,0" VerticalAlignment="Top" Height="35" Width="277" FontSize="16" FontWeight="Bold"/>
         <Button x:Name="Sign_In" Content="Sign In" HorizontalAlignment="Left" Margin="396,271,0,0" VerticalAlignment="Top" Width="176" Height="50" FontSize="18.667" FontWeight="Bold" Click="Sign_In_Click"/>
-        <Button x:Name="Sign_Up" Content="Sign Up" HorizontalAlignment="Left" Margin="123,271,0,0" VerticalAlignment="Top" Width="153" Height="50" FontSize="18.667" FontWeight="Bold" Click="Sign_Up_Click"/>
+        <Button x:Name="Sign_Up" Content="Sign Up " HorizontalAlignment="Left" Margin="123,271,0,0" VerticalAlignment="Top" Width="153" Height="50" FontSize="18.667" FontWeight="Bold" Click="Sign_Up_Click"/>
 
     </Grid>
 </Window>
