@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AirlineReversationSystemApplication"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AirlineReversationSystemApplication.AirlineCarrierPage"
         mc:Ignorable="d"
-        Title="AirlineCarrierPage" Height="702.904" Width="1096.324">
+        Title="AirlineCarrierPage" Height="783.236" Width="1096.324" WindowStartupLocation="CenterScreen" VerticalAlignment="Center">
     <Grid>
         <Label x:Name="Airline_Name" Content="Airline Name" HorizontalAlignment="Left" Margin="47,93,0,0" VerticalAlignment="Top" Height="37" Width="140" FontSize="16" FontWeight="Bold"/>
         <Label x:Name="Flight_No_" Content="Flight No." HorizontalAlignment="Left" Margin="47,136,0,0" VerticalAlignment="Top" Height="35" Width="140" FontSize="16" FontWeight="Bold"/>
@@ -27,10 +27,12 @@
         <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="629,325,0,0" VerticalAlignment="Top" Width="165" Height="66" FontSize="18.667" FontWeight="Bold" Click="Delete_Click"/>
         <Label x:Name="Airline_ID" Content="Airline ID" HorizontalAlignment="Left" Margin="47,54,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="140" Height="35"/>
         <TextBox x:Name="Airline_ID1" HorizontalAlignment="Left" Height="35" Margin="258,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="69,415,0,0" VerticalAlignment="Top" Height="214" Width="959"  MouseDoubleClick="dataGrid_MouseDoubleClick" IsReadOnly="True"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="69,415,0,0" VerticalAlignment="Top" Height="140" Width="959"  MouseDoubleClick="dataGrid_MouseDoubleClick" IsReadOnly="True"/>
         <Label x:Name="Seat" Content="Seat" HorizontalAlignment="Left" Margin="587,93,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="140" Height="35"/>
         <TextBox x:Name="Seat1" HorizontalAlignment="Left" Height="35" Margin="765,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" IsEnabled="False" FontSize="16" FontWeight="Bold"/>
         <Button x:Name="Logout" Content="Logout" HorizontalAlignment="Left" Margin="872,325,0,0" VerticalAlignment="Top" Width="156" Height="66" FontSize="18.667" FontWeight="Bold" Click="Logout_Click"/>
+        <DataGrid x:Name="AirlineDatagrid" HorizontalAlignment="Left" Margin="69,599,0,0" VerticalAlignment="Top" Height="124" Width="959" IsEnabled="False"/>
+        <Label x:Name="All_Airlines" Content="All Airlines" HorizontalAlignment="Left" Margin="69,560,0,0" VerticalAlignment="Top" Height="34" Width="331" FontSize="18.667" FontWeight="Bold"/>
 
     </Grid>
 </Window>

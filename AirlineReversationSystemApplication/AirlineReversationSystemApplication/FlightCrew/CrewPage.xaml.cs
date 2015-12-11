@@ -39,7 +39,7 @@ namespace AirlineReversationSystemApplication
         public void populateAirlineCarrier()
         {
             airlinedal air = new airlinedal();
-            AirlineDataGrid.ItemsSource = air.getAirlineCarrierFlightDetails(p);
+            AirlineDataGrid.ItemsSource = air.getAllFlights();
         }
     }
 }

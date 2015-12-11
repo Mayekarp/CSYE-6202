@@ -117,5 +117,39 @@ namespace AirlineReversationSystemApplication
             }
             return airlinelist;
         }
+
+
+        public List<AirlineCarrier> getAllFlights(/*Person p*/)
+        {
+
+            //int userid = p.UserID;
+            //string userName = p.UserName;
+
+            objcon.connection();
+            List<AirlineCarrier> airlinelist = new List<AirlineCarrier>();
+            SqlCommand cmd = new SqlCommand("Select * from AirlineFlightDetails ", objcon.con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                AirlineCarrier ac = new AirlineCarrier();
+
+                ac.AirLineName = dr.GetString(0);
+                ac.FlightNo = dr.GetString(1);
+                ac.Dates = dr.GetDateTime(2).ToString("yyyy-MM-dd");
+                ac.OriginCity = dr.GetString(3);
+                ac.DestinationCity = dr.GetString(4);
+                ac.AirLineID = dr.GetInt32(5);
+                ac.ArrivalTime = dr.GetString(6);
+                ac.DepartureTime = dr.GetString(7);
+                ac.Seat = dr.GetInt32(8).ToString();
+                ac.UserName = dr.GetString(9);
+                ac.UserID = dr.GetInt32(10);
+
+                airlinelist.Add(ac);
+
+
+            }
+            return airlinelist;
+        }
     }
 }

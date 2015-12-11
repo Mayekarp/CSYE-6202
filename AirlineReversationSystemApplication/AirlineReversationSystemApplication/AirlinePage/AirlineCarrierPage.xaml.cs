@@ -28,7 +28,8 @@ namespace AirlineReversationSystemApplication
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             this.ResizeMode = ResizeMode.NoResize;
             this.p = p;
-            airlinedal air = new airlinedal();     
+            airlinedal air = new airlinedal();
+            populateAirlineCarrier();   
             loadgridlist_airlineFlightDetails();
         }
 
@@ -38,7 +39,13 @@ namespace AirlineReversationSystemApplication
             dataGrid.ItemsSource = air.getAirlineCarrierFlightDetails(p);
 
         }
-       
+
+
+        public void populateAirlineCarrier()
+        {
+            airlinedal air = new airlinedal();
+            AirlineDatagrid.ItemsSource = air.getAllFlights();
+        }
 
         private void Add_Flight_Click(object sender, RoutedEventArgs e)
         {
